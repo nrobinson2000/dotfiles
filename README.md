@@ -1,7 +1,9 @@
 # dotfiles
 
-My attempt at publishing my dotfiles without it becoming distro-specific like
-the following repositories:
+![Screenshot of Vim](doc/vim.png)
+
+My attempt at publishing my dotfiles without it becoming distro-specific
+like the following repositories:
 
 - [nrobinson2000/pi400-base](https://github.com/nrobinson2000/pi400-base)
 - [nrobinson2000/arch-base](https://github.com/nrobinson2000/arch-base)
