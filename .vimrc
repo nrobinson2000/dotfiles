@@ -86,7 +86,7 @@ set incsearch
 "Disable startup message
 set shortmess+=I
 
-"Unbind some useless/annoying default key bindings.
+"Rebind Q to format code
 nmap Q :FormatCode<CR>
 
 "Search highlighting
