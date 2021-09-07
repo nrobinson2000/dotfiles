@@ -1,6 +1,6 @@
 # dotfiles
 
-![Screenshot of Vim](doc/vim.png)
+![Screenshot of Vim](img/vim.png)
 
 My attempt at publishing my dotfiles without it becoming distro-specific
 like the following repositories:
