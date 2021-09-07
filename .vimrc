@@ -1,5 +1,11 @@
+" .vimrc by nrobinson2000
+"
+" Needs the following packages on Arch Linux:
+" gvim vim-airline vim-molokai vim-plug
+
 "vim-plug
 call plug#begin('~/.vim/plugged')
+
 "fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -11,6 +17,8 @@ Plug 'google/vim-codefmt', { 'on': 'FormatCode' }
 
 "Languages
 Plug 'bfrg/vim-cpp-modern'
+
+"vim-plug
 call plug#end()
 
 "Rebindings
@@ -34,11 +42,14 @@ nnoremap <silent> <C-t> :Lexplore<CR>
 set nocompatible
 filetype plugin indent on
 syntax enable
-color molokai
 set ruler
 set shortmess+=I
 set wildmenu
 set autoread
+
+"vim-molokai
+color molokai
+hi NonText ctermbg=233
 
 "Indentation
 set tabstop=4
@@ -71,8 +82,8 @@ set clipboard=unnamedplus
 "Format comments when joining
 set formatoptions+=j
 
-"Load matchit.vim
-runtime! macros/matchit.vim
+"Load matchit plugin
+packadd matchit
 
 "vim-airline
 let g:airline_theme='powerlineish'
