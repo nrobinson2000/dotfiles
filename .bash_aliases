@@ -1,36 +1,55 @@
+#
+# ~/.bash_aliases
+#
+
 # Set prompt
 export PS1="\[$(tput setaf 6)\]\[$(tput bold)\]\t \[$(tput setaf 2)\]\h \[$(tput setaf 4)\]\[$(tput bold)\]\w \\$ \[$(tput sgr0)\]"
 
-# Set terminal title
+# Set window title to PWD
 export PS1="\[\e]0;\w\a\]$PS1"
 
-export GPG_TTY=$(tty)
-export EDITOR="vim"
+export GPG_TTY="$(tty)"
+
+# Editor
+export EDITOR='vim'
+alias svim='sudo -e'
 
 # Make aliases work with sudo
-alias sudo="sudo "
+alias sudo='sudo '
+
+# Enable colors
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Misc
+alias cp='cp -i'
+alias df='df -h'
+alias free='free -m'
+alias more='less'
 
 # ls
-alias la="ls -A"
-alias lh="ls -lah"
-alias l="ls"
-alias ll="ls -la"
+alias l='ls'
+alias la='ls -A'
+alias lh='ls -lah'
+alias ll='ls -la'
 
 # pushd/popd
-alias pu="pushd"
-alias po="popd"
+alias pu='pushd'
+alias po='popd'
 
 # General
-alias ..="cd .."
-alias p="particle"
-alias py="python3"
+alias ..='cd ..'
+alias py='python3'
 
 # git
-alias pull="git pull"
-alias skip-ci="update '[skip ci]'"
+alias pull='git pull'
+alias skip-ci='update "[skip ci]"'
 
 # Application specific
 alias ytm='ytfzf -ml'
+alias p='particle'
 
 # Add, commit and push all changes in a git repo
 function update() {
@@ -46,3 +65,6 @@ function update() {
 clip() { # Ex: clip ls -la
   $@ | xclip -selection "clipboard"
 }
+
+# Use vim as manpager
+#export MANPAGER='vim -c "set showtabline=0 nonumber norelativenumber" -M +MANPAGER -'
