@@ -18,6 +18,13 @@ Plug 'google/vim-codefmt', { 'on': 'FormatCode' }
 "Languages
 Plug 'bfrg/vim-cpp-modern'
 
+"Alternative theme
+"Plug 'sickill/vim-monokai'
+
+"Alternative vim-airline
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
+
 "vim-plug
 call plug#end()
 
@@ -50,6 +57,10 @@ set autoread
 "vim-molokai
 color molokai
 hi NonText ctermbg=233
+
+"Alternative theme
+"color monokai
+"hi NonText ctermbg=235
 
 "Indentation
 set tabstop=4

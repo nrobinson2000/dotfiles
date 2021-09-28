@@ -29,6 +29,10 @@ cp -i .bash_aliases .bash_profile .bashrc .vimrc ~
 # Extra files
 cp -i .conkyrc .gitconfig .xinitrc ~
 
-# Vim packages
+# Arch Linux: Vim packages
 yay -S gvim vim-airline vim-molokai vim-plug
+
+# Other distros: vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
