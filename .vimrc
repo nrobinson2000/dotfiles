@@ -22,8 +22,8 @@ Plug 'bfrg/vim-cpp-modern'
 "Plug 'sickill/vim-monokai'
 
 "Alternative vim-airline
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 "vim-plug
 call plug#end()
