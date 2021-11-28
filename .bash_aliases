@@ -23,8 +23,11 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# Misc
+# Safer cp and rm
 alias cp='cp -i'
+alias rm='rm -i'
+
+# Misc
 alias df='df -h'
 alias free='free -m'
 alias more='less'
