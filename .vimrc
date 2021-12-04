@@ -18,6 +18,9 @@ Plug 'google/vim-codefmt', { 'on': 'FormatCode' }
 "Languages
 Plug 'bfrg/vim-cpp-modern'
 
+"Git
+Plug 'tpope/vim-fugitive'
+
 "Alternative theme
 "Plug 'sickill/vim-monokai'
 
