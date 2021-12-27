@@ -73,7 +73,7 @@ clip() { # Ex: clip ls -la
 #export MANPAGER='vim -c "set showtabline=0 nonumber norelativenumber" -M +MANPAGER -'
 
 # fzf to open multiple files
-export FZF_DEFAULT_COMMAND='find . -path '*.git' -prune -o -print'
-vi() {
-  fzf --reverse --exact --multi | xargs -ro vim -o
-}
+#export FZF_DEFAULT_COMMAND='find . -path '*.git' -prune -o -print'
+#vi() {
+#  fzf --reverse --exact --multi | xargs -ro vim -o
+#}
